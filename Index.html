@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>wordpress website</title>
+      <link rel="stylesheet" href="Index.css">
+      <script src="https://kit.fontawesome.com/bffd979f90.js" crossorigin="anonymous"></script>
+      </head>
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*code starts from here*/
+body{
+  background: #FFFFFF;
+  font-size: 15px;
+  line-height: 55px;
+  margin: 20px;
+  color:#000000;
+  word-wrap: break-word;
+  font-family: 'Open Sans',sans-serif;
+}
+header{
+  background-image: url(https://images.unsplash.com/photo-1549176595-99f490c00340?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1102&q=80);
+  height: 100vh;
+}
+.container{
+  margin: 0 auto;
+}
+nav{
+ position: relative;
+  margin: 28px auto 0;
+  width: 900px;
+  height: 50px;
+  }
+nav a{
+  padding: 1px;
+  height: 10px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  line-height: 50%;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+text-align: center;
+}
+nav .animation{
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  z-index: 0;
+  background: #FF00FF;
+  transition: all .5s ease 0s; 
+  
+}
+a:nth-child(1){
+  width: 15px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+  width: 80px;
+  left: 30%;
+}
+
+nav ul{
+  padding: 5px;
+  font-size: 16px;
+  width: 900px;
+  height: 65px;
+  word-spacing: 15px;
+  right: 10px;
+  text-align: center;
+  margin-top: 25px;
+  list-style: none;
+  position: relative;
+  top: 50px;
+  border: 1px solid #000000;
+  background-color: #FFFF00;
+ 
+  }
+.animation{
+ position: absolute;
+  height: 5px;
+  bottom: 10px;
+  z-index: 0;
+  background: #1abc9c;
+  transition: all .5s ease 0;
+}
+.truck-box{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-40%,-45%);
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+}
+.truck-btn{
+  color: #000000;
+  float: left;
+  width: 18px;
+  height: 20px;
+  display: flex;
+}
+nav li{
+  display: inline-block;
+  position: relative;
+  text-align: right;
+}
+.h1{
+  font-weight: bold;
+  text-align:center;
+  font-size: 30px;
+  float: left;
+  margin: 0.5px 25px 0 0;
+  width: 15px;
+  height: 15px;
+  display: flex;
+}
+.h1 p{
+  text-align: center;
+  margin: 1px 25px 10px 35px;
+}
+.h2 p{
+  float: left;
+  font-size: 14px;
+  margin: 20px 25px 0 0;
+  word-spacing: 0px;
+  }
+.search-box{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  text-align: right;
+  background-color: #0000FF;
+  border-radius: 50px;
+  padding: 10px;
+}
+.search-button{
+  color: #FFFFFF;
+  float: right;
+  width: 30px;
+  height: 15px;
+  border-radius: 50% ;
+  background-color: #0000FF;
+  display: flex;
+}
+h1{
+  font-size: 60px;
+  text-align: left;
+  color: #fff;
+  width: 55%;
+  margin: 60px;
+  padding: 80px;
+}
+#intro{
+  background-color: #000000;
+  height: 50%;
+}
+.card-container{
+   background: #FFFFFF;
+   display: inline-block;
+   opacity: 0.9;
+    top: 77.5%;
+    transition: 0.3s;
+    transform: translate(-0%,-50%);      -ms-transform:                         translate(-50%,-50%);
+   height: 60vh;
+   width: 28.5vw;
+   margin-top: 0.5vh;
+   margin-left: 19px;
+   margin-right: 5px;
+  }
+.card-image{
+  background:#fff;
+  height: 50%;
+  width: 100%;
+}
+.card-image img{
+  height: 100%;
+  width: 100%;
+  }
+.card-button{
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translate(-0%,-99%);      -ms-transform:                         translate(-50%,-50%);
+  background-color: #555;
+  color: white;
+  font-size: 15px;
+  padding: 5px 22px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: black;
+}
+.card-details{
+  text-align: left;
+   font-weight: bold;
+  font-size: 19px;
+  padding: 1px 10px;
+  height: 2px;
+ }
+.idea p{
+  font-weight: normal;
+  float: left;
+  font-size: 14px;
+  line-height: 25px;
+  }
+.card-container:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.button{
+  color: blue;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 50px;
+  left: 43%;
+  background: linear-gradient(to    right, #ff416c, #ff4b2b);
+  transform: translate(-0%, 700%);      -ms-transform:                         translate(-50%,-50%);
+  font-size: 16px;
+  margin: 5px 0px;
+  padding: 15px 40px; 
+  cursor: pointer; 
+  
+}
+.btn:hover{
+background: #B0E0E6;
+}
+
+</style>
+
+      <body>
+        <header>
+   <div class="container">
+   
+     <nav>
+      <ul>  
+         
+          <div class="truck-box">
+ <a class="truck-btn">
+  <i class="fal fa-truck"></i>
+   </a>
+        </div>
+ 
+          <div class="h1"> 
+           <p>TRUCKING</p>
+           </div>
+          <div class="h2">
+   <p>Logistics & Transportation</p>
+            </div>
+       
+         <a href="#">HOME</a> 
+     <a href="#">ABOUT</a>
+   <a href="#">SERVICE</a>
+       <a href="#">NEWS</a>
+      <a href="#">MEDIA</a>
+    <a href="#">LOCATIONS</a>
+  <a href="#">CONTACT</a>
+   <div class="animation start-home">
+         </div>
+        <div class="search-box">
+ <a class="search-button">
+  <i class="fas fa-search"></i>
+   </a>
+         </div>
+          </ul>
+          </div>
+<div class="animation"> </div>
+       </ul>
+          </div>
+       </nav>
+     <h1>STRONGEST DISTRIBUTION 
+       NETWORK</h1>
+         </header>
+         
+        <section class="content" id="intro">
+      
+			<div class="card-container">
+				<div class="card-image"><img src="http://image.made-in-china.com/2f0j00ovnTNkpJMOqE/Garment-Shipping-Garment-Freight-Ocean-Freight-Shipping-Consolidation.jpg" alt="thumbnail">
+          <div class="button-img">
+            <button class="card-button">Read More</button>
+            </div>
+				 </div>
+				<div class="card-details"><p>GROUND SHIPPING</p>
+   <div class="idea">
+     <p>We have a wide experience in overland industry specific logistics solutions like pharmaceutical logistics,retail and automotive logistics by train or road.</p>  
+     </div>
+				</div>
+				</div>
+
+			<div class="card-container">
+				<div class="card-image"><img src="http://westerncapitalfunding.com/wp-content/uploads/2013/10/large-project-financing.jpg" alt="thumbnail">
+  <div class="button-img">
+            <button class="card-button">Read More</button>
+            </div>
+				</div>
+				<div class="card-details">
+       <p>LARGE PROJECTS</p>
+            <div class="idea">
+     <p>We bring your goods safely to worldwide destinations with our great sea fright services.We offer LLC and FLC shipments that are fast and effective with no delays.</p>  
+     </div>
+          </div>			
+				</div>
+
+			<div class="card-container">
+				<div class="card-image"><img src="https://shipstc.com/img/international-air-ocean.jpg" alt="thumbnail">
+    <div class="button-img">
+            <button class="card-button">Read More</button>
+            </div>
+          </div>
+	    <div class="card-details"><p>INTERNATIONAL AIR FREIGHT</p>
+        <div class="idea">
+     <p>We provide full supply chan management package including cost effective and fast sea freight.You can also combine this package with other means of transportation.</p>  
+     </div>
+	     </div>			
+				</div>
+   <button class="button">VIEW DETAILS</button>
+   <a class="btn">VIEW DETAILS</a> 
+       </section>   
+          
+    </div>
+       </body>
+    </html>
+  
